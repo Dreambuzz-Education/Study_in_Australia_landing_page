@@ -211,6 +211,43 @@
         padding: 1rem;
       }
 
+      #videos {
+        text-align: center;
+        padding: 40px 20px;
+        background: #f9fafb;
+      }
+
+      #videos h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .video-card {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .video-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+      }
+
+      .video-card iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9; /* keeps it responsive */
+        border: none;
+      }
+
       @media (max-width: 768px) {
         header h1 {
           font-size: 2rem;
@@ -248,6 +285,7 @@
       <a href="#why">Why Choose Us</a>
       <a href="#apply">Apply</a>
       <a href="#contact">Contact Us</a>
+      <a href="#videos">Videos</a>
     </nav>
 
     <!-- Benefits Section -->
@@ -293,15 +331,45 @@
       </div>
     </section>
 
+    <!--Gallery-->
+    <section id="videos">
+      <h2 style="color: #004aad">🎥 Glimpse of Our Previous Success</h2>
+      <div class="video-grid">
+        <div class="video-card">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FDreambuzz.Education%2Fvideos%2F1044644840906818%2F&show_text=true&width=476&t=0"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-card">
+          <div class="video-card">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FDreambuzz.Education%2Fvideos%2F1193496365838178%2F&show_text=true&width=476&t=0"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FDreambuzz.Education%2Fvideos%2F1262891748544693%2F&show_text=true&width=476&t=0"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- Apply Now -->
     <section id="apply">
       <h2>📞 Apply Now & Get Free Consultation</h2>
       <div class="form-container">
         <!-- Replace FORM_ID with your actual Google Form ID -->
-        <iframe
-          src="https://forms.gle/2NJwYSEwxQWJNCGs6"
-          >Loading…</iframe
-        >
+        <iframe src="https://forms.gle/2NJwYSEwxQWJNCGs6">Loading…</iframe>
       </div>
     </section>
 
@@ -309,10 +377,12 @@
     <section id="contact">
       <h2>📩 Contact Us</h2>
       <p>Email: info@dreambuzzbd.com</p>
-      <p>Phone: +8801939555222</p>
+      <p>Hotline: +880 9614-555222</p>
       <p>
         WhatsApp:
-        <a href="https://wa.me/8801939555222" target="_blank">Chat with Us</a>
+        <a href="https://wa.me/8801939555222" target="_blank"
+          >+8801939555222 (Chat with Us)</a
+        >
       </p>
     </section>
 
